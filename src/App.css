@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+body {
+  background: url("https://www.transparenttextures.com/patterns/aged-paper.png");
+  background-color: #fdf6e3;
+  font-family: 'Merriweather', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.storybook-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #5a2d0c;
+  text-shadow: 1px 1px 3px #f0d9b5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.storybook-subtitle {
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.storybook-btn {
+  background: #f3e5ab;
+  border: 2px solid #5a2d0c;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-family: 'Dancing Script', cursive;
+  transition: 0.3s;
+}
+
+.storybook-btn:hover {
+  background: #ffe5b4;
+  transform: scale(1.05);
+}
+
+.storybook-flip {
+  border: 3px solid #5a2d0c;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.storybook-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #fffaf0;
+  border: 2px solid #d9c29c;
+  padding: 20px;
+  font-family: 'Merriweather', serif;
 }
 
-.App-link {
-  color: #61dafb;
+.storybook-page img {
+  border-radius: 8px;
+  margin-top: 15px;
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.polaroid {
+  background: #fff;
+  padding: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 4px 6px 15px rgba(0,0,0,0.2);
+  transform: rotate(-2deg);
+  transition: 0.3s;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.storybook-wish {
+  font-size: 1.3rem;
+  font-family: 'Dancing Script', cursive;
+  color: #5a2d0c;
+  text-shadow: 1px 1px 3px #f0d9b5;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #fff, 0 0 10px #ffb347, 0 0 20px #ffcc33; }
+  to { text-shadow: 0 0 10px #fff, 0 0 20px #ff8c00, 0 0 30px #ff6600; }
 }
