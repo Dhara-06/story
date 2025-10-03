@@ -58,6 +58,24 @@
   margin: 20px 0;
 }
 
+.storybook-btn {
+  background: #f3e5ab;
+  border: 2px solid #5a2d0c;
+  border-radius: 12px;
+  padding: 10px 22px;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  color: #5a2d0c;
+  transition: 0.3s;
+}
+
+.storybook-btn:hover {
+  background: #ffe5b4 !important;
+  transform: scale(1.1) rotate(-1deg) !important;
+}
+
+
+
 .hitme-btn {
   background: #f3e5ab;
   border: 2px solid #5a2d0c;

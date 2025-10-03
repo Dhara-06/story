@@ -11,6 +11,10 @@ import Hiii from "../assets/Hiii.jpg"
 import Talk from "../assets/talk.jpg"
 import Shight from "../assets/shight.jpg"
 import Phone from "../assets/phonecall.jpg"
+import Break from "../assets/phnbreak.jpg"
+import Convey from "../assets/convey.jpg"
+import Randomtalk from "../assets/randomtalk.jpg"
+import Teach from "../assets/teach.jpg"
 
 function Story() {
   const navigate = useNavigate();
@@ -50,11 +54,11 @@ function Story() {
         <Col md={6}>
           <div className="comic-panel">
             <img
-              src={Chat}
+              src={Meet}
               alt="Laugh Together"
               className="comic-img"
             />
-            <div className="speech-bubble">With time, we grew comfy and our talks got deeper… 😇✨</div>
+            <div className="speech-bubble">After a week of sneaky peeks, I finally saw you 😍💖</div>
           </div>
         </Col>
 
@@ -62,32 +66,32 @@ function Story() {
         <Col md={6}>
           <div className="comic-panel">
             <img
-              src={Meet}
+              src={Hiii}
               alt="Meet Together"
               className="comic-img"
             />
-            <div className="thought-bubble">After a week of sneaky peeks, I finally saw you 😍💖</div>
+            <div className="thought-bubble">On the same day, I just said hi… and you looked shocked 😅💖</div>
           </div>
         </Col>
 
         <Col md={6}>
           <div className="comic-panel">
             <img
-              src={Hiii}
+              src={Talk}
               alt="Laugh Together"
               className="comic-img"
             />
-            <div className="speech-bubble">On the same day, I just said hi… and you looked shocked 😅💖</div>
+            <div className="speech-bubble">Then you came up and said hi… I was so shy and shocked 😅💖</div>
           </div>
         </Col>
         <Col md={6}>
           <div className="comic-panel">
             <img
-              src={Talk}
+              src={Chat}
               alt="First Talk"
               className="comic-img"
             />
-            <div className="thought-bubble">Then you came up and said hi… I was so shy and shocked 😅💖</div>
+            <div className="thought-bubble">With time, we grew comfy and our talks got deeper… 😇✨</div>
           </div>
         </Col>
         <Col md={6}>
@@ -110,11 +114,51 @@ function Story() {
             <div className="thought-bubble">Our first call… we just talked without knowing what to say 😂💖</div>
           </div>
         </Col>
+        <Col md={6}>
+          <div className="comic-panel">
+            <img
+              src={Break}
+              alt="Phone Break"
+              className="comic-img"
+            />
+            <div className="speech-bubble">When my phone broke, my only fear was you forgetting me 😔</div>
+          </div>
+        </Col>
+        <Col md={6}>
+          <div className="comic-panel">
+            <img
+              src={Convey}
+              alt="Convey him"
+              className="comic-img"
+            />
+            <div className="thought-bubble">Couldn’t reach you… so I asked my friend to 😅✨</div>
+          </div>
+        </Col>
+        <Col md={6}>
+          <div className="comic-panel">
+            <img
+              src={Randomtalk}
+              alt="Noticing You"
+              className="comic-img"
+            />
+            <div className="speech-bubble">Even without calls, we made up for it in college by talking a lot 💕✨</div>
+          </div>
+        </Col>
+        <Col md={6}>
+          <div className="comic-panel">
+            <img
+              src={Teach}
+              alt="First Call"
+              className="comic-img"
+            />
+            <div className="thought-bubble">Our first study session was you helping me for my Tamil exam at night 📚💖</div>
+          </div>
+        </Col>
       </Row>
 
       {/* Hit Me Button */}
       <Button className="hitme-btn mt-4" onClick={() => navigate("/memories")}>
-        Hit Me 💘
+        Tap to unfold… 💖
       </Button>
     </Container>
   );

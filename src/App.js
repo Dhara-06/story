@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Story from "./pages/Story";
 import Memories from "./pages/Memories";
+import SpecialMoments from "./pages/SpecialMoments"
 import Wishes from "./pages/Wishes";
 import "./App.css"; // custom storybook theme
 
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/story" element={<Story />} />
         <Route path="/memories" element={<Memories />} />
+        <Route path="/SpecialMoments" element={<SpecialMoments/>}/>
         <Route path="/wishes" element={<Wishes />} />
       </Routes>
     </Router>
