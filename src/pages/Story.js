@@ -58,7 +58,7 @@ function Story() {
               alt="Laugh Together"
               className="comic-img"
             />
-            <div className="speech-bubble">After a week of sneaky peeks, I finally saw you 😍💖</div>
+            <div className="speech-bubble">After a week of sneaky peeks, You finally saw me 😍💖</div>
           </div>
         </Col>
 
