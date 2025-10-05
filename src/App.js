@@ -5,6 +5,7 @@ import Story from "./pages/Story";
 import Memories from "./pages/Memories";
 import SpecialMoments from "./pages/SpecialMoments"
 import Wishes from "./pages/Wishes";
+import Fairytale from "./pages/Fairytale"
 import "./App.css"; // custom storybook theme
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/memories" element={<Memories />} />
         <Route path="/SpecialMoments" element={<SpecialMoments/>}/>
         <Route path="/wishes" element={<Wishes />} />
+        <Route path="/fairytale" element={<Fairytale />} />
       </Routes>
     </Router>
   );

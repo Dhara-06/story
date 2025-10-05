@@ -2,20 +2,18 @@ import React from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "../styles.css";
+import Selfie1 from "../assets/selfie.jpg"
 import Expo from "../assets/expo.jpg";
 import Sympo from "../assets/sympo.jpg"
 import Prize from "../assets/prize.jpg";
 import Together from "../assets/together.jpg"
-import Selfie from "../assets/selfie.jpg"
 import Possessive1 from "../assets/possessive1.jpg"
 import lastmeet from "../assets/cry.jpg"
 import Suddenmeet from "../assets/suddenmeet.jpg"
 import Hoodie from "../assets/Hisshirt.jpg"
 import Sunglasses from "../assets/sunglasses.jpg"
-import Sunglase from "../assets/sunglase.jpg"
-import Phone from "../assets/phone.jpg"
 
-function Memories() {
+function SpecialMoments() {
   const navigate = useNavigate();
 
   return (
@@ -23,19 +21,16 @@ function Memories() {
       <h2 className="storybook-title">📖 Our Comic Story</h2>
 
       <Row className="mt-4 g-4">
-        {/* Panel 1 */}
         <Col md={6}>
           <div className="comic-panel">
             <img
-              src={Selfie}   // ✅ use imported image
+              src={Selfie1}   // ✅ use imported image
               alt="selfie"
               className="comic-img"
             />
             <div className="speech-bubble">It took a while, but we finally clicked our first selfie 😍📸</div>
           </div>
         </Col>
-
-        {/* Panel 2 */}
         <Col md={6}>
           <div className="comic-panel">
             <img
@@ -44,11 +39,10 @@ function Memories() {
               className="comic-img"
             />
             <div className="thought-bubble">
-             You supported me and my friends during the project expo 💫💖
+              You supported me and my friends during the project expo 💫💖
             </div>
           </div>
         </Col>
-
         {/* Panel 3 */}
         <Col md={6}>
           <div className="comic-panel">
@@ -133,32 +127,12 @@ function Memories() {
             <div className="thought-bubble">I thought hard and shopped around on the tour… sunglasses became the perfect gift 🥰🕶️</div>
           </div>
         </Col>
-        <Col md={6}>
-          <div className="comic-panel">
-            <img
-              src={Sunglase}
-              alt="Sunglassess"
-              className="comic-img"
-            />
-            <div className="speech-bubble">You wore the sunglasses I gifted… I couldn’t stop staring at you 💖✨</div>
-          </div>
-        </Col>
-        <Col md={6}>
-          <div className="comic-panel">
-            <img
-              src={Phone}
-              alt="Phone"
-              className="comic-img"
-            />
-            <div className="thought-bubble">Phone screen broke, so I asked you to replace it… met secretly at the bus stand 🥰✨</div>
-          </div>
-        </Col>
       </Row>
-      <Button className="hitme-btn mt-4" onClick={() => navigate("/wishes")}>
-        Go on, tap! 😄💖
+      <Button className="hitme-btn mt-4" onClick={() => navigate("/Fairytale")}>
+        Go ahead…❤️✨
       </Button>
     </Container>
   );
 }
 
-export default Memories;
+export default SpecialMoments;

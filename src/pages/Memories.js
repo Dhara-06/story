@@ -15,6 +15,7 @@ import Possessive from "../assets/possessive.jpg"
 import Bracelet from "../assets/bracelet.jpg"
 import Fight from "../assets/fight.jpg"
 
+
 function Memories() {
   const navigate = useNavigate();
 
